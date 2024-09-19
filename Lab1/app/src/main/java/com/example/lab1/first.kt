@@ -11,23 +11,23 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.lab1.ui.theme.Lab1Theme
 
-class first : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            Lab1Theme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize()
-                ) { innerPadding ->
-                    FirstTaskApp(
-                        modifier = Modifier.padding(innerPadding),
-                        onBackPressed = { finish() }
-                    )
+    class first : ComponentActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContent {
+                Lab1Theme {
+                    Scaffold(
+                        modifier = Modifier.fillMaxSize()
+                    ) { innerPadding ->
+                        FirstTaskApp(
+                            modifier = Modifier.padding(innerPadding),
+                            onBackPressed = { finish() }
+                        )
+                    }
                 }
             }
         }
     }
-}
 
 @Composable
 fun FirstTaskApp(modifier: Modifier = Modifier, onBackPressed: () -> Unit) {
@@ -86,43 +86,43 @@ fun FirstTaskApp(modifier: Modifier = Modifier, onBackPressed: () -> Unit) {
         TextField(
             value = carbon,
             onValueChange = { carbon = it },
-            label = { Text("Вуглець (C_P, %)") },
+            label = { Text("Вуглець (Cp, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = hydrogen,
             onValueChange = { hydrogen = it },
-            label = { Text("Водень (H_P, %)") },
+            label = { Text("Водень (Hp, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = oxygen,
             onValueChange = { oxygen = it },
-            label = { Text("Кисень (O_P, %)") },
+            label = { Text("Кисень (Op, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = sulfur,
             onValueChange = { sulfur = it },
-            label = { Text("Сірка (S_P, %)") },
+            label = { Text("Сірка (Sp, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = nitrogen,
             onValueChange = { nitrogen = it },
-            label = { Text("Азот (N_P, %)") },
+            label = { Text("Азот (Np, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = moisture,
             onValueChange = { moisture = it },
-            label = { Text("Вологість (W_P, %)") },
+            label = { Text("Вологість (Wp, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = ash,
             onValueChange = { ash = it },
-            label = { Text("Зольність (A_P, %)") },
+            label = { Text("Зольність (Ap, %)") },
             modifier = Modifier.fillMaxWidth()
         )
 

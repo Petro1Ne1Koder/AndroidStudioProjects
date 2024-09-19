@@ -80,49 +80,49 @@ fun SecondTaskApp(modifier: Modifier = Modifier, onBackPressed: () -> Unit) {
         TextField(
             value = carbon,
             onValueChange = { carbon = it },
-            label = { Text("Вуглець (C_G, %)") },
+            label = { Text("Вуглець (Cg, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = hydrogen,
             onValueChange = { hydrogen = it },
-            label = { Text("Водень (H_G, %)") },
+            label = { Text("Водень (Hg, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = oxygen,
             onValueChange = { oxygen = it },
-            label = { Text("Кисень (O_G, %)") },
+            label = { Text("Кисень (Og, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = sulfur,
             onValueChange = { sulfur = it },
-            label = { Text("Сірка (S_G, %)") },
+            label = { Text("Сірка (Sg, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = qdaf,
             onValueChange = { qdaf = it },
-            label = { Text("Нижня теплота згоряння (Q_daf, МДж/кг)") },
+            label = { Text("Нижня теплота згоряння (Qdaf, МДж/кг)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = moisture,
             onValueChange = { moisture = it },
-            label = { Text("Вологість робочої маси (W_P, %)") },
+            label = { Text("Вологість робочої маси (Wp, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = ash,
             onValueChange = { ash = it },
-            label = { Text("Зольність сухої маси (A_P, %)") },
+            label = { Text("Зольність сухої маси (Ap, %)") },
             modifier = Modifier.fillMaxWidth()
         )
         TextField(
             value = vanadium,
             onValueChange = { vanadium = it },
-            label = { Text("Ванадій (V_G, мг/кг)") },
+            label = { Text("Ванадій (Vg, мг/кг)") },
             modifier = Modifier.fillMaxWidth()
         )
 
